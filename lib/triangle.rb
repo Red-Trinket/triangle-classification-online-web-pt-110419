@@ -21,6 +21,9 @@ class Triangle
       :scalene
     end
   end
+  
+  class TriangleError < StandardError
+  end
 
   def validate_triangle
     #creates an array of boolean values basedon the input values of a,b,c ; so that if any of those return false, the method will return false, if the array has a false value in it, then the raise Triangle Error runs
@@ -33,5 +36,3 @@ class Triangle
   end
 end
 
-class TriangleError < StandardError
-end
